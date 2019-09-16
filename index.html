@@ -8,7 +8,7 @@
     * {
         font-family: sans-serif;
     }
-
+       
     .header {
         color: white;
         background-color: #0099cc;
@@ -18,10 +18,26 @@
         background-size: 1500px 160px;
     }
 
+    .hidden {
+        position: relative;
+        left: -10000px;
+        top: auto;
+    }
+
+     .hidden:focus {
+            left: 0;
+        }
+
      nav {
         background-color:#DCDCDC;
         padding: 10px;
     }
+
+      nav a {
+            padding: .5rem;
+            margin: .5rem;
+            background-color: azure;
+        }
 
     aside {
         float:right;
@@ -55,6 +71,9 @@
             <h1>KITTIES TO GO!</h1>
             <p><i>Seattle's premiere drive-thru<br />cat rentals</i></p>
         </section>
+        
+        <a href="#main-content" class="hidden">Skip to main contet</a>
+
         <nav>
             <a>About</a> /
             <a>Rates</a> /
